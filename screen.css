@@ -24,10 +24,6 @@ header{
 figure {
   text-align: center;
 }
-img {
-  width: 50%;
-  height: 50%;
-}
 
 li {
   padding-bottom:1.09em;
@@ -40,6 +36,18 @@ label {
 input {
   border: solid;
   padding: 1em;
+}
+input[type="submit"] {
+  font-size: 1em;
+  font-family: 'Indie Flower', cursive;
+  background-color: #57d6c8;
+  font-weight: bold;
+  cursor: pointer;
+}
+select {
+  font-size: 0.75em;
+  font-family: 'Indie Flower', cursive;
+  margin-bottom: 1.09em;
 }
 /* Layout Styles */
 

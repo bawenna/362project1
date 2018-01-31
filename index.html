@@ -23,12 +23,12 @@
         <p>You can do it! Just simply enter your personal information below</p>
         <p>And you will never miss a deal anymore!</p>
       </section>
-      <section id="signup">
-      <form action="#null" method="get">
+      <section id="content">
+      <form action="#null" method="get" id="signup" novalidate>
         <ol>
           <li>
             <label for="email">Email</label>
-            <input placeholder="you@example.com" type="text" id="email" name="email" />
+            <input placeholder="you@example.com" type="email" id="email" name="email" />
           </li>
           <li>
             <label for="name">Name</label>
@@ -38,8 +38,21 @@
             <label for="phone">Phone</label>
             <input type="tel" id="phone" name="phone" placeholder="123-123-1234" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
           </li>
+          <select name="interest" required>
+            <option value="">Deals related to</option>
+            <option value="">Clothing, Jewelry & Bags</option>
+            <option value="">Beauty</option>
+            <option value="">Personal Care</option>
+            <option value="">Baby</option>
+            <option value="">Kids</option>
+            <option value="">Computers</option>
+            <option value="">Electronics</option>
+            <option value="">Men</option>
+            <option value="">Travel</option>
+            <option value="">Automotives</option>
+          </select>
         </ol>
-        <input type="submit" value="Sign Me Up!" />
+        <input type="submit" id="submit" value="Sign Me Up!" />
       </form>
     </section>
     </main>
