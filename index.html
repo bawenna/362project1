@@ -2,14 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>HTML Refresher</title>
-    <meta name="viewport" content="initial-scale=1.0,width=device-width,shrink-to-fit=no" />
+    <title>Site Style Guide</title>
+    <meta name="viewport"
+      content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
+    <link rel="stylesheet" href="screen.css" />
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   </head>
   <body>
-    <header id="header">
-      <h1>HTML Refresher</h1>
+    <header class="header">
+      <section id="title">
+        <h1>Dealsletter 2018</h1>
+      </section>
     </header>
-    <footer id="footer">
-    </footer>
+
+    <main id="content">
+      <section id = "description">
+        <p>Looking for good deals on stuffs you want to buy?</p>
+        <p>Too lazy to price match among different sites?</p>
+        <p>Don't worry! We got you! Just sign up our daily newsletter to find out the hottest deal on 10,000+ items!</p>
+        <p>You can do it! Just simply enter your personal information below</p>
+        <p>And you will never miss a deal anymore!</p>
+      </section>
+      <section id="signup">
+      <form action="#null" method="get">
+        <ol>
+          <li>
+            <label for="email">Email</label>
+            <input placeholder="you@example.com" type="text" id="email" name="email" />
+          </li>
+          <li>
+            <label for="name">Name</label>
+            <input placeholder="John" type="name" id="name" name="name"/>
+          </li>
+          <li>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-123-1234" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
+          </li>
+        </ol>
+        <input type="submit" value="Sign Me Up!" />
+      </form>
+    </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="site.js"></script>
   </body>
 </html>
