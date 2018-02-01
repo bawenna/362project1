@@ -6,7 +6,8 @@
     <meta name="viewport"
       content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
     <link rel="stylesheet" href="screen.css" />
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="//basehold.it/24" />
   </head>
   <body>
     <header class="header">
@@ -38,7 +39,8 @@
             <label for="phone">Phone</label>
             <input type="tel" id="phone" name="phone" placeholder="123-123-1234" pattern="\d{3}[\-]\d{3}[\-]\d{4}"/>
           </li>
-          <select name="interest" required>
+          <li>
+          <select name="interest" id="interest" required>
             <option value="">Deals related to</option>
             <option value="">Clothing, Jewelry & Bags</option>
             <option value="">Beauty</option>
@@ -51,6 +53,7 @@
             <option value="">Travel</option>
             <option value="">Automotives</option>
           </select>
+          </li>
         </ol>
         <input type="submit" id="submit" value="Sign Me Up!" />
       </form>
