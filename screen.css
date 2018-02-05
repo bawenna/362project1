@@ -35,14 +35,20 @@ input {
   padding: 12px;
 }
 input[type="submit"] {
-  margin-top: 2px;
+  margin-top: 0.091em;
   font-family: 'Josefin Slab', serif;
   background-color: #57d6c8;
   font-weight: bold;
   cursor: pointer;
 }
 select {
-  padding: 11px;
+  padding: 0.5em;
+}
+#list {
+  padding-top: 1.090909em;
+}
+#msg {
+  text-align: center;
 }
 /* Layout Styles */
 
