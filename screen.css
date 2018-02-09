@@ -14,7 +14,7 @@ html {
   text-align: center;
   font-family: 'Josefin Slab', serif;
   font-size: 1.375em; /* 22 / 16 = 1.375em */
-  line-height: 1.10em; /* 24 / 22 = 1.09090909em */
+  line-height: 1.091em; /* 24 / 22 = 1.09090909em */
 }
 
 header {
@@ -50,6 +50,9 @@ select {
 #msg {
   text-align: center;
 }
+.false {
+  color: red;
+}
 /* Layout Styles */
 
 /* Modular Styles */
@@ -60,6 +63,9 @@ select {
 }
 
 @media screen and (min-width: 0em) and (max-width: 39.9em){
+h1{
+  line-height: 0.825em;
+}
 input {
   box-sizing: border-box;
   width:100%;
