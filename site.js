@@ -9,13 +9,15 @@ $('#signup').on('submit',
     if(!(emailVal.match(emailPattern)))
     {
       console.log("Trying to validate email");
-      alert('Please match the email format of "you@example.com"');
+      $('.false').remove();
+      $('#emailsec').append('<p class="false">Please match the email format of "you@example.com"</p>');
       return false;
     }
     if(!(phoneVal.match(phonePattern)))
     {
       console.log("Trying");
-      alert('Please match the phone format of "xxx-xxx-xxxx"');
+      $('.false').remove();
+      $('#phonesec').append('<p class="false">Please match the phone format of "xxx-xxx-xxxx"</p>');
       return false;
     }
     else
