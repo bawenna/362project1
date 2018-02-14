@@ -1,28 +1,33 @@
 $('#signup').on('submit',
   function(e) {
-    var emailPattern = /^.+@.+$/;
-    var emailVal = $('#email').val();
-    var phonePattern = /\d{3}[\-]\d{3}[\-]\d{4}/;
-    var phoneVal = $('#phone').val();
+    var email = {
+      val: $('#email').val(),
+      pattern: /^.+@.+$/
+    }
+    var interest = {
+      val: $('#interest').val()
+    }
     var msg = '<p id="msg"> The form was submitted! </p>';
+    var email_fail = '<p class="false">Please match the email format of "you@example.com"</p>';
+    var interest_fail = '<p class="false">Please select one from the drop down menu</p>'
     e.preventDefault();
-    if(!(emailVal.match(emailPattern)))
+    if(!(email.pattern).test(email.val))
     {
       console.log("Trying to validate email");
       $('.false').remove();
-      $('#emailsec').append('<p class="false">Please match the email format of "you@example.com"</p>');
+      $('#emailsec').append(email_fail);
       return false;
     }
-    if(!(phoneVal.match(phonePattern)))
+    if((interest.val) === "0")
     {
-      console.log("Trying");
       $('.false').remove();
-      $('#phonesec').append('<p class="false">Please match the phone format of "xxx-xxx-xxxx"</p>');
+      $('#deals').append(interest_fail);
       return false;
     }
     else
     {
-    document.getElementById('submit').style.visibility = 'hidden';
+    $('.false').remove();
+    $('#submit').hide();
     $('#signup').append(msg);
     }
   }
