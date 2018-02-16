@@ -10,7 +10,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Base Styles */
 html {
-  background-image: url(imgs/deals.jpg);
+  background-image: url(imgs/deals.png);
   font-family: 'Josefin Slab', serif;
   font-size: 1.375em; /* 22 / 16 = 1.375em */
   line-height: 1.091em; /* 24 / 22 = 1.09090909em */
