@@ -30,11 +30,9 @@ header {
 main {
   padding-top: 1.091em;
   padding-bottom: 1.091em;
-
 }
 
 section {
-/*  background-color: rgba(255, 255, 255, 0.77);*/
   background-color: white;
 }
 
@@ -48,15 +46,15 @@ label {
 
 input {
   border: 0;
-  line-height:1;
-  padding: 12px;
+  line-height: 1;
+  padding: 0.545em;
   background-color: #BFBFBF;
   box-sizing: border-box;
-  width:100%;
+  width: 100%;
 }
+
 input[type="submit"] {
- background-color: #57d6c8;
-background-color: black;
+  background-color: black;
   font-weight: bold;
   cursor: pointer;
   color: white;
