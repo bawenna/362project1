@@ -25,7 +25,7 @@ $('#signup').on('submit',
     else {
       condition.email = 1;
     }
-    if((interest.val) === "0")
+    if((interest.val) === "")
     {
       $('.false').remove();
       $('#deals').append(interest_fail);
