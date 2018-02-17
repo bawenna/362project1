@@ -14,18 +14,28 @@ html {
   font-family: 'Josefin Slab', serif;
   font-size: 1.375em; /* 22 / 16 = 1.375em */
   line-height: 1.091em; /* 24 / 22 = 1.09090909em */
+  background-position: center;
+  background-repeat: round;
 }
 
 header {
-  padding-left: 5%;
-  padding-right: 5%;
+  background-color: black;
+  color: white;
+  padding: 1.091em;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.091em;
 }
 
-h1{
-  font-size: 1.83em;
-  line-height: 1.127em;
-  padding-bottom: 0.614em;
-  padding-top: 0.614em;
+main {
+  padding-top: 1.091em;
+  padding-bottom: 1.091em;
+
+}
+
+section {
+/*  background-color: rgba(255, 255, 255, 0.77);*/
+  background-color: white;
 }
 
 li {
@@ -37,76 +47,100 @@ label {
 }
 
 input {
-  background-color: #d1ffd4;
   border: 0;
   line-height:1;
   padding: 12px;
-}
-
-input, select {
+  background-color: #BFBFBF;
   box-sizing: border-box;
   width:100%;
 }
-
-input:focus {
-  background-color: #85f2b8;
-  transition: 0.2s;
-}
-select:focus {
-  background-color: #85f2b8;
-  transition: 0.2s;
-}
-
 input[type="submit"] {
-  margin-top: 0.091em;
-  font-family: 'Josefin Slab', serif;
-  background-color: #57d6c8;
+ background-color: #57d6c8;
+background-color: black;
   font-weight: bold;
   cursor: pointer;
+  color: white;
 }
 
 select {
-  background-color: #d1ffd4;
+  background-color: #BFBFBF;
   padding: 0.5em;
+  width: 100%;
 }
-
+input[type="email"]:focus {
+  background-color: #A5A5A5;
+  transition: 0.2s;
+}
+input[type="text"]:focus {
+  background-color: #A5A5A5;
+  transition: 0.2s;
+}
+select:focus {
+  background-color: #A5A5A5;
+  transition: 0.2s;
+}
 #list {
-  padding-top: 1.091em;
+  padding-top: 1.090909em;
 }
 
-/*#msg {
+#msg {
   text-align: center;
-}*/
-
-#description {
-  display: inline-block;
-  text-align: left;
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 .false {
   color: red;
 }
+
+#description {
+  padding: 1.091em;
+}
 /* Layout Styles */
 
 /* Modular Styles */
-@media screen and (min-width: 1280px) {
-  body {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
+/*
+@media screen and (min-width: 72.1em) {
+}
 
-  header,
-  #description {
-    padding-left: 0%;
-    padding-right: 0%;
+@media screen and (min-width: 40em) and (max-width: 72em) {
+}
+
+@media screen and (min-width: 0em) and (max-width: 39.9em){
+h1{
+  line-height: 0.825em;
+}
+input {
+  box-sizing: border-box;
+  width:100%;
+}
+}
+*/
+/* State Styles */
+
+@media screen and (min-width: 414px) {
+  main {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    font-size: 2em;
+    padding: 1.091em;
+  }
+  #form-section {
+    padding: 1.091em;
+  }
 
-/* State Styles */
+}
+
+@media screen and (min-width: 1204px) {
+  main {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
 /* Forms
    ========================================================================== */
 
